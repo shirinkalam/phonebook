@@ -8,6 +8,7 @@ class ComposerStaticInitf555ffd6a5dfa37e6895f70d04cc70f2
 {
     public static $files = array (
         '04c6c5c2f7095ccf6c481d3e53e1776f' => __DIR__ . '/..' . '/mustangostang/spyc/Spyc.php',
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -30,6 +31,7 @@ class ComposerStaticInitf555ffd6a5dfa37e6895f70d04cc70f2
         ),
         'P' => 
         array (
+            'Psr\\Container\\' => 14,
             'PhpOption\\' => 10,
         ),
         'M' => 
@@ -47,6 +49,10 @@ class ComposerStaticInitf555ffd6a5dfa37e6895f70d04cc70f2
         'G' => 
         array (
             'GrahamCampbell\\ResultType\\' => 26,
+        ),
+        'F' => 
+        array (
+            'Faker\\' => 6,
         ),
         'D' => 
         array (
@@ -84,6 +90,10 @@ class ComposerStaticInitf555ffd6a5dfa37e6895f70d04cc70f2
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Psr\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
         'PhpOption\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
@@ -103,6 +113,10 @@ class ComposerStaticInitf555ffd6a5dfa37e6895f70d04cc70f2
         'GrahamCampbell\\ResultType\\' => 
         array (
             0 => __DIR__ . '/..' . '/graham-campbell/result-type/src',
+        ),
+        'Faker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fakerphp/faker/src/Faker',
         ),
         'Dotenv\\' => 
         array (
