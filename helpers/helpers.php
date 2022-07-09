@@ -1,6 +1,6 @@
 <?php
 
-function site_url($route){
+function site_url($route = ''){
     return $_ENV['HOST'] . $route ;
 }
 
@@ -15,6 +15,11 @@ function view($path, $data=[]){ #error 404
     include_once $viewFullPath;
 }
 
+function view_die($path, $data=[]){ #error 404
+    view($path, $data);
+    die();
+}
+
 function strContains($str,$needle,$case_sensitive = 0){
     if($case_sensitive)
         $pos = strpos($str,$needle);
@@ -22,6 +27,10 @@ function strContains($str,$needle,$case_sensitive = 0){
         $pos = stripos($str,$needle);
 
     return ($pos !== false) ? true : false;
+}
+
+function xss_clean($str){
+    return filter_var(htmlspecialchars($str) , FILTER_SANITIZE_STRING);
 }
 
 function nice_dump($var){
